@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Welcome to home page</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Pno</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+            {% for user in users %}
+          <tr>
+            <td>{{user.name}}</td>
+            <td>{{user.pno}}</td>2
+            <td>{{user.email}}</td>
+            <td>{{user.add}}</td>
+            <td>{{user.un}}</td>
+            <td>{{user.pw}}</td>
+          </tr>
+        {% endfor %}
+        </table>
+       <style>
+        table, th, td, tr{
+            border: 2px solid blue;
+            border-collapse: collapse;
+            border-radius: 100%;
+        }
+       </style> 
+       <h1>{{user.name}}</h1>
+    </center>
+</body>
+</html>
